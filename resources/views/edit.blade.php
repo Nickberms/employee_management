@@ -24,14 +24,16 @@
                                 <label for="first_name" class="col-md-4 col-form-label text-md-end">First Name</label>
                                 <div class="col-md-6">
                                     <input id="first_name" type="text" maxlength="100" class="form-control border-dark"
-                                        name="first_name" value="{{ $employee->first_name }}" oninput="LettersOnly(this)" required>
+                                        name="first_name" value="{{ $employee->first_name }}"
+                                        oninput="LettersOnly(this)" required>
                                 </div>
                             </div>
                             <div class="row mb-3">
                                 <label for="last_name" class="col-md-4 col-form-label text-md-end">Last Name</label>
                                 <div class="col-md-6">
                                     <input id="last_name" type="text" maxlength="100" class="form-control border-dark"
-                                        name="last_name" value="{{ $employee->last_name }}" oninput="LettersOnly(this)" required>
+                                        name="last_name" value="{{ $employee->last_name }}" oninput="LettersOnly(this)"
+                                        required>
                                 </div>
                             </div>
                             <div class="row mb-3">
@@ -39,8 +41,10 @@
                                 <div class="col-md-6">
                                     <select id="gender" class="form-select border-dark" name="gender" required>
                                         <option value="">Select Gender</option>
-                                        <option value="Male" {{ $employee->gender === 'Male' ? 'selected' : '' }}>Male</option>
-                                        <option value="Female" {{ $employee->gender === 'Female' ? 'selected' : '' }}>Female</option>
+                                        <option value="Male" {{ $employee->gender === 'Male' ? 'selected' : '' }}>Male
+                                        </option>
+                                        <option value="Female" {{ $employee->gender === 'Female' ? 'selected' : ''
+                                            }}>Female</option>
                                     </select>
                                 </div>
                             </div>
@@ -48,7 +52,8 @@
                                 <label for="position" class="col-md-4 col-form-label text-md-end">Position</label>
                                 <div class="col-md-6">
                                     <input id="position" type="text" maxlength="100" class="form-control border-dark"
-                                        name="position" value="{{ $employee->position }}" oninput="LettersOnly(this)" required>
+                                        name="position" value="{{ $employee->position }}" oninput="LettersOnly(this)"
+                                        required>
                                 </div>
                             </div>
                             <div class="row mb-3">
@@ -56,9 +61,12 @@
                                 <div class="col-md-6">
                                     <select id="status" class="form-select border-dark" name="status" required>
                                         <option value="">Select Status</option>
-                                        <option value="Active" {{ $employee->status === 'Active' ? 'selected' : '' }}>Active</option>
-                                        <option value="On Leave" {{ $employee->status === 'On Leave' ? 'selected' : '' }}>On Leave</option>
-                                        <option value="Fired" {{ $employee->status === 'Fired' ? 'selected' : '' }}>Fired</option>
+                                        <option value="Active" {{ $employee->status === 'Active' ? 'selected' : ''
+                                            }}>Active</option>
+                                        <option value="On Leave" {{ $employee->status === 'On Leave' ? 'selected' : ''
+                                            }}>On Leave</option>
+                                        <option value="Fired" {{ $employee->status === 'Fired' ? 'selected' : ''
+                                            }}>Fired</option>
                                     </select>
                                 </div>
                             </div>
@@ -66,7 +74,8 @@
                                 <label for="salary" class="col-md-4 col-form-label text-md-end">Salary</label>
                                 <div class="col-md-6">
                                     <input id="salary" type="text" maxlength="8" class="form-control border-dark"
-                                        name="salary" value="{{ $employee->salary }}" oninput="NumbersOnly(this)" required>
+                                        name="salary" value="{{ $employee->salary }}" oninput="NumbersOnly(this)"
+                                        required>
                                 </div>
                             </div>
                             <div class="row mb-0">

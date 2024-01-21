@@ -62,8 +62,8 @@
                                 <label for="confirm_password" class="col-md-4 col-form-label text-md-end">Confirm
                                     Password</label>
                                 <div class="col-md-6">
-                                    <input id="confirm_password" type="password" maxlength="30" class="form-control border-dark"
-                                        name="password_confirmation" required>
+                                    <input id="confirm_password" type="password" maxlength="30"
+                                        class="form-control border-dark" name="password_confirmation" required>
                                 </div>
                             </div>
                             <div class="row mb-0">

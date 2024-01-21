@@ -50,17 +50,19 @@
                                         <td>{{ $employee->status }}</td>
                                         <td>{{ $employee->salary }}</td>
                                         <td>
-                                            <a href="{{ route('employee.edit', $employee->id) }}" class="btn btn-warning btn-sm">
+                                            <a href="{{ route('employee.edit', $employee->id) }}"
+                                                class="btn btn-warning btn-sm">
                                                 <i class="bi bi-pencil-square"></i>
                                             </a>
                                         </td>
                                         <td>
-                                        <form action="{{ route('employee.destroy', $employee->id) }}" method="POST">
-                                            @csrf
-                                            @method('DELETE')
-                                            <button type="submit" class="btn btn-danger btn-sm"><i class="bi bi-trash-fill"></i></button>
-                                        </form>
-                                    </td>
+                                            <form action="{{ route('employee.destroy', $employee->id) }}" method="POST">
+                                                @csrf
+                                                @method('DELETE')
+                                                <button type="submit" class="btn btn-danger btn-sm"><i
+                                                        class="bi bi-trash-fill"></i></button>
+                                            </form>
+                                        </td>
                                     </tr>
                                     @endforeach
                                 </tbody>
