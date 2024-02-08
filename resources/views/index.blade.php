@@ -68,6 +68,22 @@
                                 </tbody>
                             </table>
                         </div>
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item {{ $employees->previousPageUrl() ? '' : 'disabled' }}">
+                                <a class="page-link bg-success text-white border-dark"
+                                    href="{{ $employees->previousPageUrl() }}">Previous</a>
+                            </li>
+                            @for ($i = 1; $i <= $employees->lastPage(); $i++)
+                                <li class="page-item {{ $employees->currentPage() == $i ? 'active' : '' }}">
+                                    <a class="page-link {{ $employees->currentPage() == $i ? 'bg-primary text-white' : 'text-dark' }} border-dark"
+                                        href="{{ $employees->url($i) }}">{{ $i }}</a>
+                                </li>
+                                @endfor
+                                <li class="page-item {{ $employees->nextPageUrl() ? '' : 'disabled' }}">
+                                    <a class="page-link bg-success text-white border-dark"
+                                        href="{{ $employees->nextPageUrl() }}">Next</a>
+                                </li>
+                        </ul>
                     </div>
                 </div>
             </div>
